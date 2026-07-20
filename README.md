@@ -257,6 +257,7 @@ Change it back to calm wording and the theme drifts back to a **cool blue/teal**
 
 > The model only ever produces a **value** (a color) that the code validates — it never generates or runs a script. This keeps the autonomous behavior safe.
 
+The ⚠️ Model Disagreement line you saw is not an error — that's the safety net working exactly as intended. llama3 wrongly said CRITICAL at 72°F, and the code overrode it to NORMAL. Ignore it.
 ---
 
 ## 📁 Project Structure
