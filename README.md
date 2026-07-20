@@ -234,10 +234,13 @@ This file is the agent's external trigger. The agent **watches it automatically*
    ```json
    {"status": "normal", "note": "all systems calm"}
    ```
-2. The agent polls the file's modification time every loop. On startup it records the file but does **not** fire (this avoids a false trigger).
-3. When you **edit and save** the file, the agent detects the change, sends the contents to Llama, and asks for an appropriate **dark, readable background color**.
-4. The returned color is **validated against a strict hex pattern** (`#RRGGBB`) before being applied — invalid output is rejected, never used.
-5. The dashboard background updates live (polled every 2 seconds).
+   <img width="528" height="50" alt="image" src="https://github.com/user-attachments/assets/4d4743d9-8e89-43bd-9cf2-f04a4dee3a18" />
+   <img width="388" height="240" alt="image" src="https://github.com/user-attachments/assets/17be25b6-de85-41ab-9f91-a4ad905473a1" />
+
+3. The agent polls the file's modification time every loop. On startup it records the file but does **not** fire (this avoids a false trigger).
+4. When you **edit and save** the file, the agent detects the change, sends the contents to Llama, and asks for an appropriate **dark, readable background color**.
+5. The returned color is **validated against a strict hex pattern** (`#RRGGBB`) before being applied — invalid output is rejected, never used.
+6. The dashboard background updates live (polled every 2 seconds).
 
 ### Try it
 Edit `sensor_input.json` and save:
